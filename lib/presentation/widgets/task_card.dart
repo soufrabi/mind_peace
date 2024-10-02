@@ -25,7 +25,9 @@ class TaskCard extends StatelessWidget {
           children: [
             Text(
               title,
-              style: Theme.of(context).textTheme.labelMedium,
+              style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
             ),
             const SizedBox(height: 8),
             Row(
@@ -39,7 +41,7 @@ class TaskCard extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(3.0),
                   decoration: BoxDecoration(
-                    color:Colors.grey[200],
+                    color: Colors.grey[200],
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Icon(Icons.arrow_forward_ios_rounded),
