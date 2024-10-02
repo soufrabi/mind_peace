@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mind_peace/presentation/widgets/feeling_button.dart';
+import 'package:mind_peace/presentation/widgets/task_card.dart';
 
 class MeditationScreen extends StatelessWidget {
   const MeditationScreen({super.key});
@@ -71,6 +72,34 @@ class MeditationScreen extends StatelessWidget {
               Text(
                 'Today\'s task',
                 style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const Column(
+                children: [
+                  TaskCard(
+                    title: 'Morning',
+                    description:
+                        'Let\'s open up to the things that matter to people.',
+                    color: Color(0x44FF0000),
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  TaskCard(
+                    title: 'Noon',
+                    description:
+                        'Let\'s open up to the things that matter to people.',
+                    color: Colors.orangeAccent,
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  TaskCard(
+                    title: 'Evening',
+                    description:
+                        'Let\'s open up to the things that matter to people.',
+                    color: Colors.greenAccent,
+                  ),
+                ],
               )
             ],
           ),
