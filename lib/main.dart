@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mind_peace/core/theme.dart';
+import 'package:mind_peace/presentation/bottomNavBar/bloc/navigate_bloc.dart';
+import 'package:mind_peace/presentation/homePage/home_page.dart';
 import 'package:mind_peace/presentation/pages/meditation_screen.dart';
 import 'package:mind_peace/presentation/onboarding.dart';
 
@@ -11,15 +14,17 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context){
-    return MaterialApp(
-      title: "Mind Peace",
-      theme: AppTheme.lightTheme,
-      debugShowCheckedModeBanner: false,
-      home : const Center(
-        child: MeditationScreen(),
+  Widget build(BuildContext context) {
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => NavigationBloc()),
+      ],
+      child: MaterialApp(
+        title: "Mind Peace",
+        theme: AppTheme.lightTheme,
+        debugShowCheckedModeBanner: false,
+        home: HomeScreen(),
       ),
-
     );
   }
 }
