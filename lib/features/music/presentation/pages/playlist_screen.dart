@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mind_peace/features/music/domain/entity/song.dart';
 import 'package:mind_peace/features/music/presentation/bloc/song_bloc.dart';
 import 'package:mind_peace/features/music/presentation/bloc/song_state.dart';
-import 'package:mind_peace/features/music/presentation/music_player_screen.dart';
+import 'package:mind_peace/features/music/presentation/pages/music_player_screen.dart';
 
 class PlaylistScreen extends StatelessWidget {
   const PlaylistScreen({super.key});
