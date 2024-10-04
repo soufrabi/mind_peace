@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mind_peace/features/music/domain/entity/song.dart';
 import 'package:mind_peace/features/music/presentation/music_player_screen.dart';
-
-class Song {
-  final String title;
-  final String artist;
-  final String thumbnail;
-
-  Song({required this.title, required this.artist, required this.thumbnail});
-}
 
 class PlaylistScreen extends StatelessWidget {
   PlaylistScreen({super.key});
