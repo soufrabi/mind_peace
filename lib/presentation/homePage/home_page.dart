@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:mind_peace/features/music/presentation/pages/music_player_screen.dart';
 import 'package:mind_peace/features/music/presentation/pages/playlist_screen.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigate_bloc.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigation_state.dart';

@@ -6,8 +6,6 @@ import 'package:mind_peace/features/music/presentation/bloc/song_bloc.dart';
 import 'package:mind_peace/features/music/presentation/bloc/song_event.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigate_bloc.dart';
 import 'package:mind_peace/presentation/homePage/home_page.dart';
-import 'package:mind_peace/presentation/pages/meditation_screen.dart';
-import 'package:mind_peace/presentation/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
