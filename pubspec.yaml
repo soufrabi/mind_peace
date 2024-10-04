@@ -58,6 +58,10 @@ dev_dependencies:
   flutter_lints: ^4.0.0
   flutter_launcher_icons: ^0.13.1
 
+  # Rename app
+  # dart run rename_app:main all="My App Name"
+  rename_app: ^1.6.1
+
 # flutter_launcher_icons
 #
 # Commands
