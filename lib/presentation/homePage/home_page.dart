@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mind_peace/features/music/presentation/music_player_screen.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigate_bloc.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigation_state.dart';
 
@@ -11,14 +12,7 @@ class HomeScreen extends StatelessWidget {
 
   final List<Widget> pages = [
     const MeditationScreen(),
-    const Scaffold(
-      body: Center(
-        child: Text(
-          "Songs Screen",
-          style: TextStyle(color: Colors.black, fontSize: 24),
-        ),
-      ),
-    ),
+    const MusicPlayerScreen(),
   ];
 
   @override
