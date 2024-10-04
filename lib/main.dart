@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mind_peace/core/theme.dart';
+import 'package:mind_peace/features/music/domain/usecases/song_service.dart';
+import 'package:mind_peace/features/music/presentation/bloc/song_bloc.dart';
+import 'package:mind_peace/features/music/presentation/bloc/song_event.dart';
 import 'package:mind_peace/presentation/bottomNavBar/bloc/navigate_bloc.dart';
 import 'package:mind_peace/presentation/homePage/home_page.dart';
 import 'package:mind_peace/presentation/pages/meditation_screen.dart';
@@ -18,6 +21,10 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => NavigationBloc()),
+        BlocProvider(
+          create: (_) =>
+              SongBloc(songService: SongService())..add(FetchSongs()),
+        ),
       ],
       child: MaterialApp(
         title: "Mind Peace",
