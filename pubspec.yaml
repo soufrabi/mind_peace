@@ -38,6 +38,13 @@ dependencies:
   google_fonts: ^6.1.0
   flutter_bloc: ^8.1.6
   audio_video_progress_bar: ^1.0.1
+  just_audio: ^0.9.40
+  just_audio_media_kit: ^2.0.0
+
+  # Select the native media_kit libs based on your usage:
+  # NOTE: if including video libs already, these audio libs aren't necessary.
+  media_kit_libs_linux: any
+#  media_kit_libs_windows_audio: any
 
 dev_dependencies:
   flutter_test:
